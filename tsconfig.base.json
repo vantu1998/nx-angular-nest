@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-with-chau-tran/api/feature-config": [
+        "libs/api/feature-config/src/index.ts"
+      ],
+      "@nx-with-chau-tran/api/utils-config": [
+        "libs/api/utils-config/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
