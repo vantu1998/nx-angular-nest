@@ -1,5 +1,5 @@
-import {ConfigType, registerAs} from "@nestjs/config";
-import {Inject} from "@nestjs/common";
+import {ConfigType, registerAs} from '@nestjs/config';
+import {Inject} from '@nestjs/common';
 
 export const dbConfig = registerAs('db', () => ({
   uri: process.env.MONGO_URI || 'mongodb://localhost:27017/',

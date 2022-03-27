@@ -10,18 +10,45 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-with-chau-tran/api/data-access-comment": [
+        "libs/api/data-access-comment/src/index.ts"
+      ],
+      "@nx-with-chau-tran/api/data-access-post": [
+        "libs/api/data-access-post/src/index.ts"
+      ],
+      "@nx-with-chau-tran/api/data-access-user": [
+        "libs/api/data-access-user/src/index.ts"
+      ],
+      "@nx-with-chau-tran/api/feature-comment": [
+        "libs/api/feature-comment/src/index.ts"
+      ],
       "@nx-with-chau-tran/api/feature-config": [
         "libs/api/feature-config/src/index.ts"
+      ],
+      "@nx-with-chau-tran/api/feature-post": [
+        "libs/api/feature-post/src/index.ts"
+      ],
+      "@nx-with-chau-tran/api/feature-user": [
+        "libs/api/feature-user/src/index.ts"
+      ],
+      "@nx-with-chau-tran/api/shared-data-access-entities": [
+        "libs/api/shared-data-access-entities/src/index.ts"
       ],
       "@nx-with-chau-tran/api/utils-config": [
         "libs/api/utils-config/src/index.ts"
       ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }
