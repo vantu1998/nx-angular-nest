@@ -7,12 +7,12 @@ import {
   ManyToOne,
   OneToMany,
   OptionalProps,
-  Property
+  Property,
 } from '@mikro-orm/core';
-import {BaseEntity} from './base.entity';
-import {UserEntity} from './user.entity';
-import {CommentEntity} from './comment.entity';
-import {AutoMap} from '@automapper/classes';
+import { BaseEntity } from './base.entity';
+import { UserEntity } from './user.entity';
+import { CommentEntity } from './comment.entity';
+import { AutoMap } from '@automapper/classes';
 
 @Entity()
 export class PostEntity extends BaseEntity {
@@ -22,17 +22,17 @@ export class PostEntity extends BaseEntity {
   @AutoMap()
   text!: string;
 
-  @ManyToOne(() => UserEntity, {wrappedReference: true})
-  @AutoMap({typeFn: () => UserEntity})
+  @ManyToOne(() => UserEntity, { wrappedReference: true })
+  @AutoMap({ typeFn: () => UserEntity })
   author!: IdentifiedReference<UserEntity, '_id' | 'id'>;
 
   @OneToMany(() => CommentEntity, (comment) => comment.post, {
-    cascade: [Cascade.ALL]
+    cascade: [Cascade.ALL],
   })
-  @AutoMap({typeFn: () => CommentEntity})
+  @AutoMap({ typeFn: () => CommentEntity })
   comments = new Collection<CommentEntity>(this);
 
   @ManyToMany(() => UserEntity, (user) => user.liked)
-  @AutoMap({typeFn: () => UserEntity})
-  likeBy = new Collection<UserEntity>(this);
+  @AutoMap({ typeFn: () => UserEntity })
+  likedBy = new Collection<UserEntity>(this);
 }

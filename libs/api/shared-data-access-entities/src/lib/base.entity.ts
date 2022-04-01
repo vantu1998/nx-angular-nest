@@ -9,7 +9,7 @@ export class BaseEntity {
 
   @SerializedPrimaryKey()
   @AutoMap()
-  id!: ObjectId;
+  id!: string;
 
   @Property()
   @AutoMap({typeFn: () => Date})

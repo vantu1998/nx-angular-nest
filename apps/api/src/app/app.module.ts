@@ -14,6 +14,8 @@ import {
   PostProfile,
   UserProfile,
 } from '@nx-with-chau-tran/api/shared-data-access-mappings';
+import { ApiFeatureAuthModule } from '@nx-with-chau-tran/api/feature-auth';
+import { ApiFeatureSecurityModule } from '@nx-with-chau-tran/api/feature-security';
 
 @Module({
   imports: [
@@ -27,6 +29,7 @@ import {
         },
       ],
     }),
+
     MikroOrmModule.forRootAsync({
       inject: [dbConfig.KEY],
       useFactory: (dbConfig: DbConfig) => ({
@@ -37,9 +40,11 @@ import {
       }),
     }),
     ApiFeatureConfigModule,
+    ApiFeatureAuthModule,
     ApiFeatureUserModule,
     ApiFeaturePostModule,
     ApiFeatureCommentModule,
+    ApiFeatureSecurityModule,
   ],
   providers: [BaseProfile, UserProfile, PostProfile, CommentProfile],
 })

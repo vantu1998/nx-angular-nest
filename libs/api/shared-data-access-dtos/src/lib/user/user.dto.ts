@@ -8,7 +8,7 @@ import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 export class UserDto extends BaseDto {
   @AutoMap()
   @ApiProperty()
-  userName!: string;
+  username!: string;
 
   @AutoMap()
   @ApiProperty()
