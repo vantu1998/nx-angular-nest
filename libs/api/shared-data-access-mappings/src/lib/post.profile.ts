@@ -1,6 +1,6 @@
 import { AutomapperProfile, InjectMapper } from '@automapper/nestjs';
 import { Injectable } from '@nestjs/common';
-import { Mapper, MappingProfile } from '@automapper/core';
+import { mapFrom, Mapper, MappingProfile } from '@automapper/core';
 import {
   BaseEntity,
   PostEntity,
@@ -19,7 +19,16 @@ export class PostProfile extends AutomapperProfile {
   mapProfile(): MappingProfile {
     return (mapper) => {
       const baseMapping = mapper.getMapping(BaseEntity, BaseDto);
-      mapper.createMap(PostEntity, PostDto, { extends: [baseMapping] });
+      mapper
+        .createMap(PostEntity, PostDto, { extends: [baseMapping] })
+        .forMember(
+          (d) => d.commentsCount,
+          mapFrom((s) => s.comments.length)
+        )
+        .forMember(
+          (d) => d.likedByCount,
+          mapFrom((s) => s.likedBy.length)
+        );
     };
   }
 }

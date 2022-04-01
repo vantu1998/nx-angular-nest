@@ -27,5 +27,5 @@ export class PostDto extends BaseDto {
 
   @AutoMap({ typeFn: () => Number })
   @ApiProperty({ type: () => Number })
-  likedCount = 0;
+  likedByCount = 0;
 }

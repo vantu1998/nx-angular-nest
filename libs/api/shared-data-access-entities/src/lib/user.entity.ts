@@ -20,7 +20,7 @@ export enum UserRole {
 
 @Entity({ collection: 'users' })
 export class UserEntity extends BaseEntity {
-  [OptionalProps]?: 'createAt' | 'updateAt' | 'role';
+  [OptionalProps]?: 'createdAt' | 'updatedAt' | 'role';
 
   @Property()
   @Unique()

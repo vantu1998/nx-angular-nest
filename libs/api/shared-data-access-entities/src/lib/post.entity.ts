@@ -16,7 +16,7 @@ import { AutoMap } from '@automapper/classes';
 
 @Entity()
 export class PostEntity extends BaseEntity {
-  [OptionalProps]?: 'createAt' | 'updateAt';
+  [OptionalProps]?: 'createdAt' | 'updatedAt';
 
   @Property()
   @AutoMap()
