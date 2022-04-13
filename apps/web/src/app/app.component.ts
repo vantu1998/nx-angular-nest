@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ct-root',
-  template: `<h1>NX Workspace</h1>`,
+  template: `<button mat-raised-button color="primary">click</button>`,
   styles: [],
 })
 export class AppComponent {

@@ -5,10 +5,11 @@ import { AppComponent } from './app.component';
 import { API_BASE_URL } from '@nx-with-chau-tran/web/shared-data-access-api-sdk';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule],
+  imports: [BrowserModule, BrowserAnimationsModule, MatButtonModule],
   providers: [{ provide: API_BASE_URL, useValue: environment.apiBaseUrl }],
   bootstrap: [AppComponent],
 })
