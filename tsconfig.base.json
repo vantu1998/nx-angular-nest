@@ -64,7 +64,7 @@
         "libs/api/utils-config/src/index.ts"
       ],
       "@nx-with-chau-tran/web/shared-data-access-api-sdk": [
-        "libs/web/shared-data-access-api-sdk/src/index.ts"
+        "libs/web/shared/data-access-api-sdk/src/index.ts"
       ]
     }
   },
