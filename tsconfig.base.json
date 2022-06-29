@@ -63,6 +63,12 @@
       "@nx-with-chau-tran/api/utils-config": [
         "libs/api/utils-config/src/index.ts"
       ],
+      "@nx-with-chau-tran/web/feature-login": [
+        "libs/web/feature-login/src/index.ts"
+      ],
+      "@nx-with-chau-tran/web/feature-register": [
+        "libs/web/feature-register/src/index.ts"
+      ],
       "@nx-with-chau-tran/web/shared-data-access-api-sdk": [
         "libs/web/shared/data-access-api-sdk/src/index.ts"
       ],

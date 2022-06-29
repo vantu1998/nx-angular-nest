@@ -15,6 +15,18 @@ import {LayoutComponent, LayoutComponentModule} from './layout.component';
         path: '',
         redirectTo: 'login',
         pathMatch: 'full'
+      },
+      {
+        path: 'login',
+        loadChildren: () => import('@nx-with-chau-tran/web/feature-login').then(
+          (m) => m.WebFeatureLoginModule
+        )
+      },
+      {
+        path: 'register',
+        loadChildren: () => import('@nx-with-chau-tran/web/feature-register').then(
+          (m) => m.WebFeatureRegisterModule
+        )
       }
     ])
   ],
