@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'ct-root',
-  template: `<button mat-raised-button color="primary">click</button>`,
+  template: `
+    <router-outlet></router-outlet>`,
   styles: [],
 })
 export class AppComponent {

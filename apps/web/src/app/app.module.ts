@@ -1,16 +1,17 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { API_BASE_URL } from '@nx-with-chau-tran/web/shared-data-access-api-sdk';
-import { environment } from '../environments/environment';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
+import {AppComponent} from './app.component';
+import {API_BASE_URL} from '@nx-with-chau-tran/web/shared-data-access-api-sdk';
+import {environment} from '../environments/environment';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {WebShellModule} from '@nx-with-chau-tran/web/shell';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatButtonModule],
-  providers: [{ provide: API_BASE_URL, useValue: environment.apiBaseUrl }],
+  imports: [BrowserModule, BrowserAnimationsModule, WebShellModule],
+  providers: [{provide: API_BASE_URL, useValue: environment.apiBaseUrl}],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+}
