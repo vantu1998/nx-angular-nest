@@ -72,7 +72,13 @@
       "@nx-with-chau-tran/web/shared-data-access-api-sdk": [
         "libs/web/shared/data-access-api-sdk/src/index.ts"
       ],
-      "@nx-with-chau-tran/web/shell": ["libs/web/shell/src/index.ts"]
+      "@nx-with-chau-tran/web/shell": ["libs/web/shell/src/index.ts"],
+      "@nx-with-chau-tran/web/shell/feature": [
+        "libs/web/shell/feature/src/index.ts"
+      ],
+      "@nx-with-chau-tran/web/shell/ui/navbar-left": [
+        "libs/web/shell/ui/navbar-left/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

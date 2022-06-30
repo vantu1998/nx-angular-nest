@@ -1,30 +1,30 @@
 {
   "projectType": "library",
-  "root": "libs/web/shell",
-  "sourceRoot": "libs/web/shell/src",
+  "root": "libs/web/shell/feature",
+  "sourceRoot": "libs/web/shell/feature/src",
   "prefix": "ct",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/web/shell"],
+      "outputs": ["dist/libs/web/shell/feature"],
       "options": {
-        "project": "libs/web/shell/ng-package.json"
+        "project": "libs/web/shell/feature/ng-package.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/web/shell/tsconfig.lib.prod.json"
+          "tsConfig": "libs/web/shell/feature/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/web/shell/tsconfig.lib.json"
+          "tsConfig": "libs/web/shell/feature/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/web/shell"],
+      "outputs": ["coverage/libs/web/shell/feature"],
       "options": {
-        "jestConfig": "libs/web/shell/jest.config.js",
+        "jestConfig": "libs/web/shell/feature/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -32,8 +32,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/web/shell/src/**/*.ts",
-          "libs/web/shell/src/**/*.html"
+          "libs/web/shell/feature/src/**/*.ts",
+          "libs/web/shell/feature/src/**/*.html"
         ]
       }
     }

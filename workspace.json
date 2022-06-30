@@ -22,6 +22,7 @@
     "web-feature-login": "libs/web/feature-login",
     "web-feature-register": "libs/web/feature-register",
     "web-shared-data-access-api-sdk": "libs/web/shared/data-access-api-sdk",
-    "web-shell": "libs/web/shell"
+    "web-shell": "libs/web/shell/feature",
+    "web-shell-ui-navbar-left": "libs/web/shell/ui/navbar-left"
   }
 }

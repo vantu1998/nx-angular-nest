@@ -5,8 +5,8 @@ import {AppComponent} from './app.component';
 import {API_BASE_URL} from '@nx-with-chau-tran/web/shared-data-access-api-sdk';
 import {environment} from '../environments/environment';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {WebShellModule} from '@nx-with-chau-tran/web/shell';
 import {HttpClientModule} from '@angular/common/http';
+import {WebShellModule} from '@nx-with-chau-tran/web/shell/feature';
 
 @NgModule({
   declarations: [AppComponent],

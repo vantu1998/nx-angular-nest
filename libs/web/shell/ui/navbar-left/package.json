@@ -1,5 +1,5 @@
 {
-  "name": "@nx-with-chau-tran/web/shell",
+  "name": "@nx-with-chau-tran/web/shell/ui/navbar-left",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^13.2.0",

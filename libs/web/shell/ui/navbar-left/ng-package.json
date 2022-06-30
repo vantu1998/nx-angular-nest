@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../../../../dist/libs/web/shell/ui/navbar-left",
+  "lib": {
+    "entryFile": "src/index.ts"
+  }
+}
