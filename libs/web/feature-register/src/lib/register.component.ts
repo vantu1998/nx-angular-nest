@@ -15,6 +15,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {SecurityControllerService} from '@nx-with-chau-tran/web/shared-data-access-api-sdk';
 import {CommonModule} from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'ct-register',
@@ -34,6 +35,7 @@ import {CommonModule} from '@angular/common';
       <mat-card class="w-[400px] mx-auto">
         <form class="flex flex-col" [formGroup]="registerForm">
           <mat-form-field appearance="outline">
+            <mat-icon matPrefix>person</mat-icon>
             <mat-label>User name</mat-label>
             <input matInput formControlName="username" maxlength="128">
             <mat-error
@@ -45,6 +47,7 @@ import {CommonModule} from '@angular/common';
             </mat-error>
           </mat-form-field>
           <mat-form-field appearance="outline">
+            <mat-icon matPrefix>lock</mat-icon>
             <mat-label>Password</mat-label>
             <input matInput type="password" formControlName="password">
             <mat-error *ngIf="password?.hasError('required')">
@@ -55,6 +58,7 @@ import {CommonModule} from '@angular/common';
             </mat-error>
           </mat-form-field>
           <mat-form-field appearance="outline">
+            <mat-icon matPrefix>lock</mat-icon>
             <mat-label>Confirm password</mat-label>
             <input matInput type="password" formControlName="confirmPassword">
             <mat-error *ngIf="confirmPassword?.hasError('required')">
@@ -132,6 +136,7 @@ export class RegisterComponent {
     RouterModule,
     MatToolbarModule,
     MatButtonModule,
+    MatIconModule,
   ],
   exports: [RegisterComponent]
 })

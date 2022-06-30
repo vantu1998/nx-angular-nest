@@ -9,6 +9,7 @@ import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/
 import {CommonModule} from '@angular/common';
 import {SecurityControllerService} from '@nx-with-chau-tran/web/shared-data-access-api-sdk';
 import {TokenResultDto} from '@nx-with-chau-tran/api/shared-data-access-dtos';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'ct-login',
@@ -28,9 +29,11 @@ import {TokenResultDto} from '@nx-with-chau-tran/api/shared-data-access-dtos';
       <mat-card class="w-[400px] mx-auto">
         <form [formGroup]="loginForm" class="flex flex-col">
           <mat-form-field appearance="outline">
+            <mat-icon matPrefix>person</mat-icon>
             <mat-label>User name</mat-label>
             <input matInput formControlName="username" maxlength="128">
-            <mat-error *ngIf="loginForm.controls['username'].hasError('email') && !loginForm.controls['username'].hasError('required')">
+            <mat-error
+                    *ngIf="loginForm.controls['username'].hasError('email') && !loginForm.controls['username'].hasError('required')">
               Please input valid email
             </mat-error>
             <mat-error *ngIf="loginForm.controls['username'].hasError('required')">
@@ -38,8 +41,10 @@ import {TokenResultDto} from '@nx-with-chau-tran/api/shared-data-access-dtos';
             </mat-error>
           </mat-form-field>
           <mat-form-field appearance="outline">
+            <mat-icon matPrefix>lock</mat-icon>
+            <mat-icon (click)="isShowPassword = !isShowPassword" matSuffix>{{isShowPassword ? 'visibility' : 'visibility_off'}}</mat-icon>
             <mat-label>Password</mat-label>
-            <input matInput type="password" formControlName="password">
+            <input matInput [type]="isShowPassword ? 'text' : 'password'" formControlName="password">
             <mat-error *ngIf="loginForm.controls['password'].hasError('required')">
               Password is <strong>required</strong>
             </mat-error>
@@ -59,7 +64,7 @@ import {TokenResultDto} from '@nx-with-chau-tran/api/shared-data-access-dtos';
 export class LoginComponent implements OnInit {
 
   loginForm!: FormGroup;
-
+  isShowPassword = false;
   constructor(
     private securityService: SecurityControllerService,
     private router: Router) {
@@ -91,7 +96,8 @@ export class LoginComponent implements OnInit {
     MatToolbarModule,
     RouterModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    MatIconModule
   ],
   exports: [LoginComponent]
 })
