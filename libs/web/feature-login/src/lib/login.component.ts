@@ -7,8 +7,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {Router, RouterModule} from '@angular/router';
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import {CommonModule} from '@angular/common';
-import {SecurityControllerService} from '@nx-with-chau-tran/web/shared-data-access-api-sdk';
-import {TokenResultDto} from '@nx-with-chau-tran/api/shared-data-access-dtos';
+import {SecurityControllerService} from '@nx-angular-nest/web/shared-data-access-api-sdk';
+import {TokenResultDto} from '@nx-angular-nest/api/shared-data-access-dtos';
 import {MatIconModule} from '@angular/material/icon';
 
 @Component({

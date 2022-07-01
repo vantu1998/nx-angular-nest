@@ -2,7 +2,7 @@ import {Logger} from '@nestjs/common';
 import {NestFactory} from '@nestjs/core';
 
 import {AppModule} from './app/app.module';
-import {AppConfig, appConfig} from '@nx-with-chau-tran/api/utils-config';
+import {AppConfig, appConfig} from '@nx-angular-nest/api/utils-config';
 import helmet from 'helmet';
 import * as compression from 'compression';
 import {DocumentBuilder, SwaggerModule} from '@nestjs/swagger';

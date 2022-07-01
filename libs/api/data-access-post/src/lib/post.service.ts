@@ -8,10 +8,10 @@ import { InjectRepository } from '@mikro-orm/nestjs';
 import {
   PostEntity,
   UserEntity,
-} from '@nx-with-chau-tran/api/shared-data-access-entities';
+} from '@nx-angular-nest/api/shared-data-access-entities';
 import { EntityRepository, QueryOrder, Reference } from '@mikro-orm/core';
-import { UserService } from '@nx-with-chau-tran/api/data-access-user';
-import { PostDto } from '@nx-with-chau-tran/api/shared-data-access-dtos';
+import { UserService } from '@nx-angular-nest/api/data-access-user';
+import { PostDto } from '@nx-angular-nest/api/shared-data-access-dtos';
 import { InjectMapper } from '@automapper/nestjs';
 import { Mapper } from '@automapper/core';
 

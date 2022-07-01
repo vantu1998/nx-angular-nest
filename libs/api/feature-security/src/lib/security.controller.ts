@@ -4,9 +4,9 @@ import {
   LoginParamsDto,
   RegisterParamsDto,
   TokenResultDto,
-} from '@nx-with-chau-tran/api/shared-data-access-dtos';
-import { SecurityService } from '@nx-with-chau-tran/api/data-access-security';
-import { ApiErrors } from '@nx-with-chau-tran/api/shared-utils-decorators';
+} from '@nx-angular-nest/api/shared-data-access-dtos';
+import { SecurityService } from '@nx-angular-nest/api/data-access-security';
+import { ApiErrors } from '@nx-angular-nest/api/shared-utils-decorators';
 
 @ApiTags('Security')
 @ApiErrors()

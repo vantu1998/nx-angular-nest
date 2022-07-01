@@ -4,13 +4,13 @@ import { Mapper, MappingProfile } from '@automapper/core';
 import {
   BaseEntity,
   UserEntity,
-} from '@nx-with-chau-tran/api/shared-data-access-entities';
+} from '@nx-angular-nest/api/shared-data-access-entities';
 import {
   AuthUserDto,
   BaseDto,
   UserDto,
   UserInformationDto,
-} from '@nx-with-chau-tran/api/shared-data-access-dtos';
+} from '@nx-angular-nest/api/shared-data-access-dtos';
 
 @Injectable()
 export class UserProfile extends AutomapperProfile {

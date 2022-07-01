@@ -1,5 +1,5 @@
 import { BaseDto } from '../base.dto';
-import { UserRole } from '@nx-with-chau-tran/api/shared-data-access-entities';
+import { UserRole } from '@nx-angular-nest/api/shared-data-access-entities';
 import { PostDto } from '../post/post.dto';
 import { CommentDto } from '../comment/comment.dto';
 import { AutoMap } from '@automapper/classes';

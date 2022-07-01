@@ -1,8 +1,8 @@
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { InjectRepository } from '@mikro-orm/nestjs';
-import { UserEntity } from '@nx-with-chau-tran/api/shared-data-access-entities';
+import { UserEntity } from '@nx-angular-nest/api/shared-data-access-entities';
 import { EntityRepository } from '@mikro-orm/core';
-import { RegisterParamsDto } from '@nx-with-chau-tran/api/shared-data-access-dtos';
+import { RegisterParamsDto } from '@nx-angular-nest/api/shared-data-access-dtos';
 
 @Injectable()
 export class UserService {

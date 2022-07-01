@@ -2,18 +2,18 @@ import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { InjectMapper } from '@automapper/nestjs';
 import { Mapper } from '@automapper/core';
 import { JwtService } from '@nestjs/jwt';
-import { UserService } from '@nx-with-chau-tran/api/data-access-user';
+import { UserService } from '@nx-angular-nest/api/data-access-user';
 import {
   AuthConfig,
   InjectAuthConfig,
-} from '@nx-with-chau-tran/api/utils-config';
+} from '@nx-angular-nest/api/utils-config';
 import { JwtPayload } from './jwt-payload';
-import { UserEntity } from '@nx-with-chau-tran/api/shared-data-access-entities';
+import { UserEntity } from '@nx-angular-nest/api/shared-data-access-entities';
 import {
   AuthUserDto,
   TokenResultDto,
   UserInformationDto,
-} from '@nx-with-chau-tran/api/shared-data-access-dtos';
+} from '@nx-angular-nest/api/shared-data-access-dtos';
 
 @Injectable()
 export class AuthService {

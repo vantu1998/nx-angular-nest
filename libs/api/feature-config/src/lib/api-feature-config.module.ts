@@ -1,6 +1,6 @@
 import {Module} from '@nestjs/common';
 import {ConfigModule} from '@nestjs/config';
-import {appConfig, authConfig, dbConfig} from '@nx-with-chau-tran/api/utils-config';
+import {appConfig, authConfig, dbConfig} from '@nx-angular-nest/api/utils-config';
 
 @Module({
   imports: [ConfigModule.forRoot({

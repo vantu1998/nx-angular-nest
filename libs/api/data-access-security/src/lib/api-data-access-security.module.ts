@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { ApiDataAccessAuthModule } from '@nx-with-chau-tran/api/data-access-auth';
-import { ApiDataAccessUserModule } from '@nx-with-chau-tran/api/data-access-user';
+import { ApiDataAccessAuthModule } from '@nx-angular-nest/api/data-access-auth';
+import { ApiDataAccessUserModule } from '@nx-angular-nest/api/data-access-user';
 import { SecurityService } from './security.service';
 
 @Module({

@@ -15,74 +15,74 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-with-chau-tran/api/data-access-auth": [
+      "@nx-angular-nest/api/data-access-auth": [
         "libs/api/data-access-auth/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/data-access-comment": [
+      "@nx-angular-nest/api/data-access-comment": [
         "libs/api/data-access-comment/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/data-access-post": [
+      "@nx-angular-nest/api/data-access-post": [
         "libs/api/data-access-post/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/data-access-security": [
+      "@nx-angular-nest/api/data-access-security": [
         "libs/api/data-access-security/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/data-access-user": [
+      "@nx-angular-nest/api/data-access-user": [
         "libs/api/data-access-user/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/feature-auth": [
+      "@nx-angular-nest/api/feature-auth": [
         "libs/api/feature-auth/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/feature-comment": [
+      "@nx-angular-nest/api/feature-comment": [
         "libs/api/feature-comment/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/feature-config": [
+      "@nx-angular-nest/api/feature-config": [
         "libs/api/feature-config/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/feature-post": [
+      "@nx-angular-nest/api/feature-post": [
         "libs/api/feature-post/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/feature-security": [
+      "@nx-angular-nest/api/feature-security": [
         "libs/api/feature-security/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/feature-user": [
+      "@nx-angular-nest/api/feature-user": [
         "libs/api/feature-user/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/shared-data-access-dtos": [
+      "@nx-angular-nest/api/shared-data-access-dtos": [
         "libs/api/shared-data-access-dtos/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/shared-data-access-entities": [
+      "@nx-angular-nest/api/shared-data-access-entities": [
         "libs/api/shared-data-access-entities/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/shared-data-access-mappings": [
+      "@nx-angular-nest/api/shared-data-access-mappings": [
         "libs/api/shared-data-access-mappings/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/shared-utils-decorators": [
+      "@nx-angular-nest/api/shared-utils-decorators": [
         "libs/api/shared-utils-decorators/src/index.ts"
       ],
-      "@nx-with-chau-tran/api/utils-config": [
+      "@nx-angular-nest/api/utils-config": [
         "libs/api/utils-config/src/index.ts"
       ],
-      "@nx-with-chau-tran/web/feature-login": [
+      "@nx-angular-nest/web/feature-login": [
         "libs/web/feature-login/src/index.ts"
       ],
-      "@nx-with-chau-tran/web/feature-register": [
+      "@nx-angular-nest/web/feature-register": [
         "libs/web/feature-register/src/index.ts"
       ],
-      "@nx-with-chau-tran/web/shared-data-access-api-sdk": [
+      "@nx-angular-nest/web/shared-data-access-api-sdk": [
         "libs/web/shared/data-access-api-sdk/src/index.ts"
       ],
-      "@nx-with-chau-tran/web/shell": ["libs/web/shell/src/index.ts"],
-      "@nx-with-chau-tran/web/shell/feature": [
+      "@nx-angular-nest/web/shell": ["libs/web/shell/src/index.ts"],
+      "@nx-angular-nest/web/shell/feature": [
         "libs/web/shell/feature/src/index.ts"
       ],
-      "@nx-with-chau-tran/web/shell/ui/navbar-left": [
+      "@nx-angular-nest/web/shell/ui/navbar-left": [
         "libs/web/shell/ui/navbar-left/src/index.ts"
       ],
-      "@nx-with-chau-tran/web/shell/ui/resizer": [
+      "@nx-angular-nest/web/shell/ui/resizer": [
         "libs/web/shell/ui/resizer/src/index.ts"
       ],
-      "@nx-with-chau-tran/web/shell/ui/sidebar": [
+      "@nx-angular-nest/web/shell/ui/sidebar": [
         "libs/web/shell/ui/sidebar/src/index.ts"
       ]
     }

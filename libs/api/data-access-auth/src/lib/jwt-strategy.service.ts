@@ -6,7 +6,7 @@ import { JwtPayload } from './jwt-payload';
 import {
   AuthConfig,
   InjectAuthConfig,
-} from '@nx-with-chau-tran/api/utils-config';
+} from '@nx-angular-nest/api/utils-config';
 
 @Injectable()
 export class JwtStrategyService extends PassportStrategy(Strategy, 'jwt') {

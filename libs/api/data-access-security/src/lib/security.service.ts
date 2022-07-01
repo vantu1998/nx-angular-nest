@@ -4,17 +4,17 @@ import {
   InternalServerErrorException,
   NotFoundException,
 } from '@nestjs/common';
-import { AuthService } from '@nx-with-chau-tran/api/data-access-auth';
-import { UserService } from '@nx-with-chau-tran/api/data-access-user';
+import { AuthService } from '@nx-angular-nest/api/data-access-auth';
+import { UserService } from '@nx-angular-nest/api/data-access-user';
 import {
   AuthConfig,
   InjectAuthConfig,
-} from '@nx-with-chau-tran/api/utils-config';
+} from '@nx-angular-nest/api/utils-config';
 import {
   LoginParamsDto,
   RegisterParamsDto,
   TokenResultDto,
-} from '@nx-with-chau-tran/api/shared-data-access-dtos';
+} from '@nx-angular-nest/api/shared-data-access-dtos';
 import { compare, genSalt, hash } from 'bcrypt';
 
 @Injectable()

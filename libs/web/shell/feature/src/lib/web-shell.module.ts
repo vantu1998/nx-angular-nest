@@ -18,13 +18,13 @@ import {LayoutComponent, LayoutComponentModule} from './layout.component';
       },
       {
         path: 'login',
-        loadChildren: () => import('@nx-with-chau-tran/web/feature-login').then(
+        loadChildren: () => import('@nx-angular-nest/web/feature-login').then(
           (m) => m.WebFeatureLoginModule
         )
       },
       {
         path: 'register',
-        loadChildren: () => import('@nx-with-chau-tran/web/feature-register').then(
+        loadChildren: () => import('@nx-angular-nest/web/feature-register').then(
           (m) => m.WebFeatureRegisterModule
         )
       }

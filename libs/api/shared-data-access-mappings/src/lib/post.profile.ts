@@ -4,11 +4,11 @@ import { mapFrom, Mapper, MappingProfile } from '@automapper/core';
 import {
   BaseEntity,
   PostEntity,
-} from '@nx-with-chau-tran/api/shared-data-access-entities';
+} from '@nx-angular-nest/api/shared-data-access-entities';
 import {
   BaseDto,
   PostDto,
-} from '@nx-with-chau-tran/api/shared-data-access-dtos';
+} from '@nx-angular-nest/api/shared-data-access-dtos';
 
 @Injectable()
 export class PostProfile extends AutomapperProfile {

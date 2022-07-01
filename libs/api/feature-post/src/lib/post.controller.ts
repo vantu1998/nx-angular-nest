@@ -18,12 +18,12 @@ import {
 import {
   ApiErrors,
   CurrentUser,
-} from '@nx-with-chau-tran/api/shared-utils-decorators';
-import { PostService } from '@nx-with-chau-tran/api/data-access-post';
+} from '@nx-angular-nest/api/shared-utils-decorators';
+import { PostService } from '@nx-angular-nest/api/data-access-post';
 import {
   AuthUserDto,
   PostDto,
-} from '@nx-with-chau-tran/api/shared-data-access-dtos';
+} from '@nx-angular-nest/api/shared-data-access-dtos';
 import { AuthGuard } from '@nestjs/passport';
 
 @ApiTags('Post')

@@ -6,7 +6,7 @@ import {
   ApiNotFoundResponse,
   ApiUnauthorizedResponse,
 } from '@nestjs/swagger';
-import { ApiExceptionDto } from '@nx-with-chau-tran/api/shared-data-access-dtos';
+import { ApiExceptionDto } from '@nx-angular-nest/api/shared-data-access-dtos';
 
 export function ApiErrors() {
   return applyDecorators(

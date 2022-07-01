@@ -3,9 +3,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
-import {NavbarLeftComponentModule} from '@nx-with-chau-tran/web/shell/ui/navbar-left';
-import {SidebarComponentModule} from '@nx-with-chau-tran/web/shell/ui/sidebar';
-import {ResizerComponentModule} from '@nx-with-chau-tran/web/shell/ui/resizer';
+import {NavbarLeftComponentModule} from '@nx-angular-nest/web/shell/ui/navbar-left';
+import {SidebarComponentModule} from '@nx-angular-nest/web/shell/ui/sidebar';
+import {ResizerComponentModule} from '@nx-angular-nest/web/shell/ui/resizer';
 
 @Component({
   selector: 'ct-layout',

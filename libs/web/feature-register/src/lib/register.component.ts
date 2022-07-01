@@ -13,7 +13,7 @@ import {
 import {Router, RouterModule} from '@angular/router';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
-import {SecurityControllerService} from '@nx-with-chau-tran/web/shared-data-access-api-sdk';
+import {SecurityControllerService} from '@nx-angular-nest/web/shared-data-access-api-sdk';
 import {CommonModule} from '@angular/common';
 import {MatIconModule} from '@angular/material/icon';
 
