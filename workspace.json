@@ -23,6 +23,8 @@
     "web-feature-register": "libs/web/feature-register",
     "web-shared-data-access-api-sdk": "libs/web/shared/data-access-api-sdk",
     "web-shell": "libs/web/shell/feature",
-    "web-shell-ui-navbar-left": "libs/web/shell/ui/navbar-left"
+    "web-shell-ui-navbar-left": "libs/web/shell/ui/navbar-left",
+    "web-shell-ui-resizer": "libs/web/shell/ui/resizer",
+    "web-shell-ui-sidebar": "libs/web/shell/ui/sidebar"
   }
 }

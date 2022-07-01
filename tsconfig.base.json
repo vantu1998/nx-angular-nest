@@ -78,6 +78,12 @@
       ],
       "@nx-with-chau-tran/web/shell/ui/navbar-left": [
         "libs/web/shell/ui/navbar-left/src/index.ts"
+      ],
+      "@nx-with-chau-tran/web/shell/ui/resizer": [
+        "libs/web/shell/ui/resizer/src/index.ts"
+      ],
+      "@nx-with-chau-tran/web/shell/ui/sidebar": [
+        "libs/web/shell/ui/sidebar/src/index.ts"
       ]
     }
   },
